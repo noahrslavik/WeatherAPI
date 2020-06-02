@@ -17,8 +17,8 @@ public class ApiController {
 	
 	@RequestMapping("/")
 	public String repsonse(Model model) {
-		List<DailyWeather> forcast = service.showWeather();
-		model.addAttribute("forcast",forcast);
+		List<DailyWeather> weatherToday = service.showWeather();
+		model.addAttribute("weatherToday",weatherToday);
 		
 		return "/display";
 		

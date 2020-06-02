@@ -19,6 +19,10 @@ public class Time {
 	public void setTempLabel(List<String> tempLabel) {
 		this.tempLabel = tempLabel;
 	}
+	@Override
+	public String toString() {
+		return "Time [startPeriodName=" + startPeriodName + ", tempLabel=" + tempLabel + "]";
+	}
 	
 	
 	

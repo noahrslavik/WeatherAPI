@@ -17,5 +17,10 @@ public class JsonOutmost {
 	public void setData(Data data) {
 		this.data = data;
 	}
+	
+	@Override
+	public String toString() {
+		return "JsonOutmost [time=" + time + ", data=" + data + "]";
+	}
 
 }

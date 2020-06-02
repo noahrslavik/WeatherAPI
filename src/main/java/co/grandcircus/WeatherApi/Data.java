@@ -20,5 +20,10 @@ public class Data {
 		this.weather = weather;
 	}
 	
+	@Override
+	public String toString() {
+		return "Data [temperature=" + temperature + ", weather=" + weather + "]";
+	}
+	
 	
 }

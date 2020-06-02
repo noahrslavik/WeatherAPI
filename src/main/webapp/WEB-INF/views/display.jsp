@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+		<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,22 +8,16 @@
 <title>Weather Forcast</title>
 </head>
 <body>
-
-<table>	
-		<c:forEach items="${forcast}" var="day">
-			<tr>
-				<td>${day.day}</td>
-				<td>${day.low}</td>
-				<td>${day.temp}</td>
-				<td>${day.weather}</td>
-			</tr>	
-		</c:forEach>			
 		
+		<c:forEach items="${weatherToday}" var="current">
+			<tr>
+				<td>${current.day}</td>
+				<td>${current.low}</td>
+				<td>${current.temp}</td>
+				<td>${current.weather}</td>
+			</tr>
+		</c:forEach>
 	</table>
-
-
-
-
 
 </body>
 </html>

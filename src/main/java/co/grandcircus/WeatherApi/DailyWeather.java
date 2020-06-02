@@ -31,7 +31,7 @@ public class DailyWeather {
 		}
 		@Override
 		public String toString() {
-			return "DailyWeather [day=" + day + ", temp=" + temp + ", low=" + low + ", weather=" + weather + "]";
+			return "[day=" + day + ", temp=" + temp + ", low=" + low + ", weather=" + weather + "]";
 		}
 		
 
